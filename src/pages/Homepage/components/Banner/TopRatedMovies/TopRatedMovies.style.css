@@ -1,5 +1,5 @@
 .carousel-container{
-    overflow : hidden;
+    overflow : visible;
     height: 440px;
     padding: 10px;
     
@@ -7,4 +7,6 @@
 
 .movie-slider{
     padding: 0 10px;
+    position: relative;
+    overflow: visible;
 }

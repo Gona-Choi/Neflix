@@ -4,6 +4,8 @@
     background-size:cover;
     cursor:pointer;
     transition:0.5s;
+    position: relative;
+    z-index: 1;
 }
 
 .overlay{
@@ -15,15 +17,24 @@
     color: white;
     font-weight: bold;
     overflow-wrap: break-word;
+    position: absolute;
     
 }
-
-.overlay:hover{
+.movie-card:hover .overlay{
     opacity: 1;
 }
 
 .movie-card:hover{
     transform:scale(1.2) translate(10px);
-    z-index: 2;
+    z-index: 9999;
     font-size: small;
+}
+
+.react-multi-carousel-item {
+    position: relative;
+    z-index: 1;
+}
+
+.react-multi-carousel-item:hover {
+    z-index: 9999;
 }
